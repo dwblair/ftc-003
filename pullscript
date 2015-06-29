@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./pull-serial -p /dev/ttyACM0 | ./wrap -k temp | ./push_phant_json./pull-serial -p /dev/ttyACM0 | ./wrap -k temp | ./push_phant_json
+./pull-serial -p /dev/ttyACM0 | ./push_babble

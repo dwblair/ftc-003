@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import json
+import requests
+
+temp=39
+
+babble_url = 'http://dev.websiteonline.website/saveSingleObservation'
+data = {'current_observation': {'temp_f':temp}}   
+
+headers = {'Content-type': 'application/json','Accept': 'text/plain'}
+r = requests.post(babble_url, data = json.dumps(data), headers = headers)
+print r
